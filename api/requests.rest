@@ -1,0 +1,26 @@
+GET http://localhost:3001/todos
+
+###
+POST http://localhost:3001/todo/new
+Content-Type: application/json
+
+{
+    "text" : "apply for UNIPD"
+}
+###
+POST http://localhost:3001/todo/new
+Content-Type: application/json
+
+{
+    "text" : "apply for ERASMUS"
+}
+###
+POST http://localhost:3001/todo/new
+Content-Type: application/json
+
+{
+    "text" : "apply for Erasmos"
+}
+DELETE http://localhost:3001/todo/delete/6408a3fbb200e065ae227896
+###
+PUT http://localhost:3001/todo/complete/6408a6a75bf442ea77dec7ba

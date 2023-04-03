@@ -1,0 +1,86 @@
+body {background-color:rgb(60, 58, 58);
+color: rgb(37, 33, 33);} 
+.App{
+    padding: 32px;
+}
+h1{font-size: 40px;
+    color: rgb(192, 192, 193);
+font-weight: 700;
+margin-bottom: 32px;}
+h3{
+    font-size: 18px;
+    color: rgb(195, 197, 197);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.todo{position: relative;background-color: darkgrey;
+padding: 16px;border-radius: 16px;display: flex;align-items: center;transition: 0.5s;
+cursor: pointer;margin-bottom: 16px;}
+.todo:hover{opacity: 0.7;}
+.todo .checkbox{
+    width: 20px;height: 20px; margin-right: 16px;
+    border-radius: 999px;background-color: rgb(147, 132, 132);
+    transition: 0.4s;
+}
+.todo.is-complete .checkbox{background-color: darkred;}
+.todo.is-complete .text{text-decoration: line-through;}
+.todo .delete{width: 24px; height: 24px;top: 30%;right: 16px;position: absolute;transform: translateY(30%);font-family:sans-serif;
+color: aliceblue; background-color: darkred;border-radius: 50%;display: flex;align-items: center; justify-content: center;}
+.addPopup {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 999px;
+    font-size: 28px;
+    font-weight: 900;
+    color: beige;
+    cursor: pointer;
+
+
+}
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 400px;
+    background-color: lightgray;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 24px;
+
+}
+.closePopup{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    background-color: darkred;
+    color: azure;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.popup h3 {
+     color: black;
+    margin-bottom: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.add-todo-input{appearance: none;
+border: none;outline: none;background-color: aliceblue;
+padding: 8px;border-radius: 16px;width: 100%;box-shadow: 0px 2px 24px;
+font-size: 20px;}
+.button{padding: 16px 32px;border-radius: 99px;display: inline-block;background-color: cornflowerblue;
+cursor: pointer;text-align: center;margin-top: 16px;margin-right: 32px;font-size: 18px;text-transform: uppercase;}
